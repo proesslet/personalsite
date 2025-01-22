@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Configuration
-REMOTE_USER="docker1"
-REMOTE_HOST="10.0.0.5"
+REMOTE_USER="docker1" # Replace with your docker username
+REMOTE_HOST="10.0.0.5" # Replace with your docker IP
 REMOTE_PATH="/home/docker1/images"  # This will be created if it doesn't exist
-IMAGE_NAME="personalsite"
-CONTAINER_NAME="personalsite"
-DOMAIN="prestonroesslet.com"
+IMAGE_NAME="personalsite" # Replace with your image name
+CONTAINER_NAME="personalsite" # Replace with your container name
+DOMAIN="prestonroesslet.com" # Replace with your domain
 
 # Docker run command
 DOCKER_RUN_CMD="docker run -d \
