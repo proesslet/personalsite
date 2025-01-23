@@ -55,3 +55,7 @@ echo "✅ Deployment complete! Your site should be available at https://${DOMAIN
 # Verify the container is running
 echo "🔍 Verifying deployment..."
 ssh $REMOTE_USER@$REMOTE_HOST "docker ps | grep $CONTAINER_NAME" 
+
+echo "Cleaning up old images..."
+ssh $REMOTE_USER@$REMOTE_HOST "docker image prune -a -f"
+
